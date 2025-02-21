@@ -1,10 +1,10 @@
 import UnderConstruction from '@/components/underConstruction';
 import React from 'react';
 
-const ContactPage = () => {
+const WorkPage: React.FC = () => {
     return (
         <UnderConstruction />
     );
 };
 
-export default ContactPage;
+export default WorkPage;

@@ -18,10 +18,10 @@ function ArrowIcon() {
 export default function Footer() {
   return (
     <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-white-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-white-300">
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-purple-500 dark:hover:text-purple-100"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/mykalbayouk"
@@ -32,13 +32,24 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-purple-500 dark:hover:text-purple-100"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/michaelbayouk/"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">linkedin</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-purple-500 dark:hover:text-purple-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="/resources/documents/resume.pdf"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">resume</p>
           </a>
         </li>
       </ul>

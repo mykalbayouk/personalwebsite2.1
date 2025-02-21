@@ -1,99 +1,38 @@
 import React from 'react';
+import { TypingAnimation } from '@/components/magicui/typing-animation';
 
-const education = [
-    {
-        degree: 'Bachelor of Science in Computer Science',
-        institution: 'University of Example',
-        duration: '2015 to 2019'
-    },
-    {
-        degree: 'Master of Science in Software Engineering',
-        institution: 'Example Institute of Technology',
-        duration: '2019 to 2021'
-    }
-];
-
-const workExperience = [
-    {
-        title: 'Software Engineer',
-        company: 'Tech Company A',
-        duration: '2021 to Present'
-    },
-    {
-        title: 'Intern',
-        company: 'Tech Company B',
-        duration: 'Summer 2020'
-    }
-];
-
-const skills = [
-    'JavaScript / TypeScript',
-    'React / Redux',
-    'Node.js',
-    'Python',
-    'SQL / NoSQL Databases'
-];
-
-const projects = [
-    {
-        name: 'Personal Website',
-        description: 'A personal website to showcase my portfolio and blog.'
-    },
-    {
-        name: 'Open Source Contributions',
-        description: 'Contributions to various open source projects on GitHub.'
-    }
-];
 
 const AboutPage: React.FC = () => {
     return (
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-            <h1>About Me</h1>
-            <section>
-                <h2>Education</h2>
-                <ul>
-                    {education.map((item, index) => (
-                        <li key={index}>
-                            <strong>{item.degree}</strong>
-                            <br />
-                            {item.institution} - {item.duration}
-                        </li>
-                    ))}
-                </ul>
-            </section>
-            <section>
-                <h2>Work Experience</h2>
-                <ul>
-                    {workExperience.map((item, index) => (
-                        <li key={index}>
-                            <strong>{item.title}</strong>
-                            <br />
-                            {item.company} - {item.duration}
-                        </li>
-                    ))}
-                </ul>
-            </section>
-            <section>
-                <h2>Skills</h2>
-                <ul>
-                    {skills.map((skill, index) => (
-                        <li key={index}>{skill}</li>
-                    ))}
-                </ul>
-            </section>
-            <section>
-                <h2>Projects</h2>
-                <ul>
-                    {projects.map((project, index) => (
-                        <li key={index}>
-                            <strong>{project.name}</strong>
-                            <br />
-                            {project.description}
-                        </li>
-                    ))}
-                </ul>
-            </section>
+        <div className="flex flex-col items-center">
+        <div className="flex items-center p-3">
+               <TypingAnimation className="text-7xl font-bold mb-5" >
+                 Michael J. Bayouk 
+               </TypingAnimation>
         </div>
+        <div className="flex items-center p-5 space-x-8 flex-col md:flex-row">
+            <img
+            src="/resources/images/me.jpg"
+            alt="Michael Bayouk"
+            className="rounded-xl w-96 h-96 shadow-lg m-8"
+            />
+            <div className="max-w-xl space-y-4 text-center">
+            <p className="text-lg leading-relaxed text-white-700">
+            I'm Michael J. Bayouk, a passionate software developer with a love for both front-end and back-end development.
+            I enjoy creating software that is both functional and enjoyable to use, and I'm always eager to learn new technologies to refine my skills.
+            I have a strong background in JavaScript, TypeScript, and React, and I'm proficient in building scalable web applications.
+            </p>
+            <p className="text-lg leading-relaxed text-white-700">
+            In my free time, I enjoy playing basketball and watching anime—recently,
+            I've been enjoying Solo Leveling and Sakamato Days.
+            I also play video games, with Marvel Rivals being a current favorite.
+            Beyond that, I love reading, particularly the works of Osamu Dazai.
+            Spending time with family and friends is important to me, whether it's watching a movie or grabbing sushi together.
+            </p>
+            </div>
+        </div>
+        </div>
+
     );
 };
 

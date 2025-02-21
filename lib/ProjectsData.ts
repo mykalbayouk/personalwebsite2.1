@@ -19,7 +19,7 @@ export interface Project {
         id: 1,
         title: "PokéApp",
         description: "A Pokémon information application",
-        image: '/resources/projects/pokedex.png',
+        image: '/resources/images/projects/pokedex.png',
         technologies: ["React", "TypeScript", "Tailwind CSS"],
         githubUrl: "https://github.com/yourusername/pokeapp"
       },
@@ -27,7 +27,7 @@ export interface Project {
         id: 2,
         title: "Musiiconvert",
         description: "Music file conversion tool",
-        image: '/resources/projects/musii.png',
+        image: '/resources/images/projects/musii.png',
         technologies: ["Next.js", "TypeScript", "Node.js"],
         githubUrl: "https://github.com/yourusername/musiiconvert"
       },
@@ -35,7 +35,7 @@ export interface Project {
         id: 3,
         title: "Healthcare App",
         description: "Healthcare management system",
-        image: '/resources/projects/mcr.png',
+        image: '/resources/images/projects/mcr.png',
         technologies: ["React", "Node.js", "MongoDB"],
         githubUrl: "https://github.com/yourusername/healthcare-app"
       }

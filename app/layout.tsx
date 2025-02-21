@@ -40,7 +40,7 @@ export default function RootLayout({
         repeatDelay={1}
         className={cn(
           "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+          "inset-x-0 inset-y-[-30%] h-[115%] skew-y-12",
         )}
       />
       <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 pt-20">

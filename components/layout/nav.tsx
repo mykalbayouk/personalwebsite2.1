@@ -52,7 +52,7 @@ export function Navbar() {
                   <Link
                     key={path}
                     href={path}
-                    className="transition-all hover:text-neutral-800 dark:hover:text-purple-500 flex align-middle relative py-1 px-2"
+                    className="transition-all hover:text-purple-500 dark:hover:text-purple-500 flex align-middle relative py-1 px-2"
                   >
                     <div className="flex items-center">
                       {React.createElement(icon, {
