@@ -84,29 +84,20 @@ const main = {
   backgroundColor: '#231E26FF',
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
-  overflowY: 'auto',
-  overflowX: 'hidden',
-  color: '#ffffff',
-  fontSize: '16px',
-  lineHeight: '24px',
-  padding: '5',
-  margin: '5',
-  WebkitTextSizeAdjust: '100%',
-  MsTextSizeAdjust: '100%',
-  WebkitFontSmoothing: 'antialiased',
-  MozOsxFontSmoothing: 'grayscale',
-  boxSizing: 'border-box',
-  letterSpacing: '0.5px',
-  textTransform: 'none',
-
+  overflowY: 'auto' as const,
 };
 
 const container = {
   margin: '0 auto',
   padding: '20px 0 48px',
   borderRadius: '8px',
-  overflowY: 'auto',
-  maxHeight: '100vh',
+  overflowY: 'auto' as const,
+  maxWidth: '600px',
+  width: '100%',
+  backgroundColor: '#231E26FF',
+  color: '#ffffff',
+  boxShadow: '0 0 24px 0 rgba(0,0,0,0.1)',
+  boxSizing: 'border-box' as const,
 };
 
 const section = {
