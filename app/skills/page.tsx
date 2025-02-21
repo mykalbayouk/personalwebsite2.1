@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconCloud } from "@/components/magicui/icon-cloud";
 import UnderConstruction from "@/components/underConstruction";
 
 const SkillsPage: React.FC = () => {
