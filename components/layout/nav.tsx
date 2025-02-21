@@ -18,8 +18,8 @@ const navItems = {
     name: 'about',
     icon: CgProfile,
   },
-  '/skills': {
-    name: 'skills',
+  '/projects': {
+    name: 'projects',
     icon: GrProjects,
   },
   '/work': {

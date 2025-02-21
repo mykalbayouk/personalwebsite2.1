@@ -1,39 +1,81 @@
-import React from 'react';
-import { TypingAnimation } from '@/components/magicui/typing-animation';
+import React from "react";
+import { Timeline } from "@/components/aceui/timeline";
+import { ProjectsData } from '@/lib/ProjectsData';
 
-
-const AboutPage: React.FC = () => {
+export default function AboutMePage() {
+    const data = [
+        {
+            title: "Present",
+            content: (
+                <div>
+                    <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        I love to travel and recently I&apos;ve had the opportunity to visit Japan. Exploring new places and experiencing different cultures is something I am passionate about. Music, on the other hand, is my constant companion, providing a soundtrack to my life&apos;s adventures.
+                    </p>
+                    <div className="grid grid-cols-1 gap-4">
+                        <img
+                            src="resources/images/about/seven.jpg"
+                            alt="Japan"
+                            className="rounded-lg object-cover h-16 md:h-36 lg:h-64 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        />
+                        <img
+                            src={ProjectsData.projects[0].image}
+                            alt="Musii"
+                            className="rounded-lg object-cover h-16 md:h-36 lg:h-64 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "2024",
+            content: (
+                <div>
+                    <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        This year I really focused on improving my skill set by learning many new skills such as Flutter as
+                        well as trying to get more involved in the communityt by attending more hackathons and club meetups.
+                    </p>
+                    <div className="grid grid-cols gap-4">
+                        <img
+                            src={ProjectsData.projects[2].image}
+                            alt="pokedex"
+                            className="rounded-lg object-cover h-16 md:h-36 lg:h-64 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        />
+                        <img
+                            src="resources/images/about/devdogs.png"
+                            alt="DevDogs"
+                            className="rounded-lg object-cover h-16 md:h-36 lg:h-64 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "2023",
+            content: (
+                <div>
+                    <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        I was fortunte enough to have an internship at a rocket company, United Launch Alliance, where I was able to work on some really cool projects and even witness a launch happen live!
+                        I also started to get more in tune with nature by going on hikes and camping trips.
+                    </p>
+                    <div className="grid grid-cols-1 gap-4">
+                        <img
+                            src="resources/images/about/atlas.jpg"
+                            alt="ULA Atlas V"
+                            className="rounded-lg object-cover h-16 md:h-36 lg:h-64 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        />
+                        <img
+                            src="resources/images/about/nature.jpg"
+                            alt="nature"
+                            className="rounded-lg object-cover h-16 md:h-36 lg:h-64 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        />
+                    </div>
+                </div>
+            ),
+        },
+    ];
     return (
-        <div className="flex flex-col items-center">
-        <div className="flex items-center p-3">
-               <TypingAnimation className="text-7xl font-bold mb-5" >
-                 Michael J. Bayouk 
-               </TypingAnimation>
+        <div className="w-full bg-transparent">
+            <Timeline data={data} />
         </div>
-        <div className="flex items-center p-5 space-x-8 flex-col md:flex-row">
-            <img
-            src="/resources/images/me.jpg"
-            alt="Michael Bayouk"
-            className="rounded-xl w-96 h-96 shadow-lg m-8"
-            />
-            <div className="max-w-xl space-y-4 text-center">
-            <p className="text-lg leading-relaxed text-white-700">
-            I'm Michael J. Bayouk, a passionate software developer with a love for both front-end and back-end development.
-            I enjoy creating software that is both functional and enjoyable to use, and I'm always eager to learn new technologies to refine my skills.
-            I have a strong background in JavaScript, TypeScript, and React, and I'm proficient in building scalable web applications.
-            </p>
-            <p className="text-lg leading-relaxed text-white-700">
-            In my free time, I enjoy playing basketball and watching anime—recently,
-            I've been enjoying Solo Leveling and Sakamato Days.
-            I also play video games, with Marvel Rivals being a current favorite.
-            Beyond that, I love reading, particularly the works of Osamu Dazai.
-            Spending time with family and friends is important to me, whether it's watching a movie or grabbing sushi together.
-            </p>
-            </div>
-        </div>
-        </div>
-
     );
-};
-
-export default AboutPage;
+}

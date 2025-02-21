@@ -17,14 +17,6 @@ export interface Project {
     private static readonly _projects: Project[] = [
       {
         id: 1,
-        title: "PokéApp",
-        description: "A Pokémon information application",
-        image: '/resources/images/projects/pokedex.png',
-        technologies: ["React", "TypeScript", "Tailwind CSS"],
-        githubUrl: "https://github.com/yourusername/pokeapp"
-      },
-      {
-        id: 2,
         title: "Musiiconvert",
         description: "Music file conversion tool",
         image: '/resources/images/projects/musii.png',
@@ -32,13 +24,21 @@ export interface Project {
         githubUrl: "https://github.com/yourusername/musiiconvert"
       },
       {
-        id: 3,
+        id: 2,
         title: "Healthcare App",
         description: "Healthcare management system",
         image: '/resources/images/projects/mcr.png',
         technologies: ["React", "Node.js", "MongoDB"],
         githubUrl: "https://github.com/yourusername/healthcare-app"
-      }
+      },
+      {
+        id: 3,
+        title: "PokéApp",
+        description: "A Pokémon information application",
+        image: '/resources/images/projects/pokedex.png',
+        technologies: ["React", "TypeScript", "Tailwind CSS"],
+        githubUrl: "https://github.com/yourusername/pokeapp"
+      },
     ];
   
     public static get projects(): Project[] {
