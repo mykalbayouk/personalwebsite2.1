@@ -32,7 +32,7 @@ export default function AboutMePage() {
                 <div>
                     <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
                         This year I really focused on improving my skill set by learning many new skills such as Flutter as
-                        well as trying to get more involved in the communityt by attending more hackathons and club meetups.
+                        well as trying to get more involved in the community by attending more hackathons and club meetups.
                     </p>
                     <div className="grid grid-cols gap-4">
                         <img
@@ -54,7 +54,7 @@ export default function AboutMePage() {
             content: (
                 <div>
                     <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        I was fortunte enough to have an internship at a rocket company, United Launch Alliance, where I was able to work on some really cool projects and even witness a launch happen live!
+                        I was fortunate enough to have an internship at a rocket company, United Launch Alliance, where I was able to work on some really cool projects and even witness a launch happen live!
                         I also started to get more in tune with nature by going on hikes and camping trips.
                     </p>
                     <div className="grid grid-cols-1 gap-4">
