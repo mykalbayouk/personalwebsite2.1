@@ -25,7 +25,6 @@ const CustomButton: React.FC<CustomButtonProps> = ({
                 bg-transparent
                 border-2
                 border-purple-600
-                rounded-3xl
                 overflow-hidden
                 transition-all
                 duration-300
