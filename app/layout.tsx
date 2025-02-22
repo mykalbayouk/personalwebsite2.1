@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto">
       <MouseFollower />
       <AnimatedGridPattern
