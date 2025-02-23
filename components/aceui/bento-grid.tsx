@@ -15,6 +15,7 @@ import {
   IconBrandMongodb,
   IconFlame,
   IconBrandPython,
+  IconCoffee,
 } from "@tabler/icons-react";
 
 export const BentoGrid = ({
@@ -112,7 +113,7 @@ function stringToIcon(tech: string) {
     case "Git":
       return <IconBrandGit className="h-6 w-6" />;
     case "Java":
-      return <IconFlame className="h-6 w-6" />;
+      return <IconCoffee className="h-6 w-6" />;
     case "Python":
       return <IconBrandPython className="h-6 w-6" />;
     case "Flame":
