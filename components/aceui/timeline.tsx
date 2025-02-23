@@ -49,7 +49,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           </p>
         </div>
         <div className="md:w-1/2 mt-4 md:mt-0 md:pl-8">
-          <img src="resources/images/about/me.jpg" alt="About me image" className="w-full h-54 rounded-lg shadow-lg" />
+          <img src="resources/images/about/me.jpg" alt="About me image" className="w-full h-[50vh] rounded-lg shadow-lg object-cover" />
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500">
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-purple-200">
                 {item.title}
               </h3>
               {item.content}{" "}
