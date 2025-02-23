@@ -9,7 +9,7 @@ export default function AboutMePage() {
             content: (
                 <div>
                     <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        I love to travel and recently I&apos;ve had the opportunity to visit Japan. Exploring new places and experiencing different cultures is something I am passionate about. Music, on the other hand, is my constant companion, providing a soundtrack to my life&apos;s adventures.
+                        I love to travel and recently I&apos;ve had the opportunity to visit Japan. Exploring new places and experiencing different cultures is something I am passionate about. I have also been working on a new project called MusiiConvert, an app that allows you to convert mp3 files to sheet music.
                     </p>
                     <div className="grid grid-cols-1 gap-4">
                         <img
@@ -32,7 +32,7 @@ export default function AboutMePage() {
                 <div>
                     <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
                         This year I really focused on improving my skill set by learning many new skills such as Flutter as
-                        well as trying to get more involved in the community by attending more hackathons and club meetups.
+                        well as trying to get more involved in the community by attending club meetings and getting to know new people.
                     </p>
                     <div className="grid grid-cols gap-4">
                         <img
@@ -55,7 +55,7 @@ export default function AboutMePage() {
                 <div>
                     <p className="text-white-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
                         I was fortunate enough to have an internship at a rocket company, United Launch Alliance, where I was able to work on some really cool projects and even witness a launch happen live!
-                        I also started to get more in tune with nature by going on hikes and camping trips.
+                        I also started to spend more time outdoors by going on hikes and camping trips.
                     </p>
                     <div className="grid grid-cols-1 gap-4">
                         <img
