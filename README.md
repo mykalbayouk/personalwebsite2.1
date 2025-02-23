@@ -8,10 +8,10 @@ a projects section to see the code I have created, an insight into my career as 
 - Node.js
 - shadcn
 - React
-- [aceternity UI]([aceternity](https://ui.aceternity.com/))
+- [aceternity UI](https://ui.aceternity.com/)
 - Resend Email API
 
 ## Link
 Please visit and contact me to tell me what you think! \
-[Michael Bayouk Portfolio]([michaelbayo.uk](https://www.michaelbayo.uk/))
+[michaelbayo.uk](https://www.michaelbayo.uk/)
 
