@@ -48,18 +48,18 @@ export function Navbar() {
             <div className="flex space-x-4 min-w-max ml-4">
               {Object.entries(navItems).map(([path, { name, icon }]) => {
                 return (
-                  <Link
+                    <Link
                     key={path}
                     href={path}
                     className="transition-all hover:text-purple-500 flex align-middle relative py-1 px-2"
-                  >
+                    >
                     <div className="flex items-center">
-                      {React.createElement(icon, {
-                        className: 'w-4 h-4',
-                      })}
-                        <span className="ml-1 md:ml-2">{name}</span>
+                        {React.createElement(icon, {
+                        className: 'w-6 h-6 md:w-4 md:h-4',
+                        })}
+                      <span className="hidden md:block md:ml-2">{name}</span>
                     </div>
-                  </Link>
+                    </Link>
                 )
               })}
             </div>
