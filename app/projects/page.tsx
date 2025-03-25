@@ -547,7 +547,7 @@ const MomentumAnim = () => {
                             variants={buttonVariants}
                             className="w-8 h-8 md:w-12 md:h-12 bg-[#A00000] rounded-full flex items-center justify-center"
                         >
-                            <IconPlayerPlay className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                            <IconRun className="w-4 h-4 md:w-6 md:h-6 text-white" />
                         </motion.div>
                     </div>
                 </motion.div>
