@@ -541,18 +541,18 @@ const MomentumAnim = () => {
                     variants={phoneVariants}
                     className="absolute flex items-center justify-center"
                 >
-                    <div className="w-24 h-40 bg-neutral-800 rounded-3xl p-4 relative flex items-center justify-center">
-                        <div className="w-2 h-2 bg-neutral-600 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2" />
+                    <div className="w-16 h-28 md:w-24 md:h-40 bg-neutral-800 rounded-3xl p-3 md:p-4 relative flex items-center justify-center">
+                        <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-neutral-600 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2" />
                         <motion.div
                             variants={buttonVariants}
-                            className="w-12 h-12 bg-[#A00000] rounded-full flex items-center justify-center"
+                            className="w-8 h-8 md:w-12 md:h-12 bg-[#A00000] rounded-full flex items-center justify-center"
                         >
-                            <IconPlayerPlay className="w-6 h-6 text-white" />
+                            <IconPlayerPlay className="w-4 h-4 md:w-6 md:h-6 text-white" />
                         </motion.div>
                     </div>
                 </motion.div>
                 <motion.div variants={runVariants} className="absolute">
-                    <IconRun className="h-20 w-20 text-[#A00000]" />
+                    <IconRun className="h-16 w-16 md:h-20 md:w-20 text-[#A00000]" />
                 </motion.div>
             </div>
         </motion.div>
