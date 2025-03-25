@@ -23,6 +23,9 @@ import {
     IconCarFilled,
     IconSword,
     IconShieldFilled,
+    IconActivity,
+    IconRun,
+    IconPlayerPlay,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -374,7 +377,7 @@ const BirboAnim = () => {
             </div>
         </motion.div>
     );
-}
+};
 
 const DawgAnim = () => {
     const carVariants = {
@@ -489,7 +492,87 @@ const ToBeMade = () => {
         </div>
     );
 }
+
+const MomentumAnim = () => {
+    const phoneVariants = {
+        initial: { scale: 1, opacity: 1 },
+        animate: {
+            scale: [1, 0.9, 1],
+            opacity: [1, 0.5, 0],
+            transition: {
+                duration: 1,
+                ease: "easeInOut"
+            }
+        }
+    };
+
+    const buttonVariants = {
+        initial: { scale: 1 },
+        animate: {
+            scale: [1, 0.8, 1],
+            transition: {
+                duration: 0.3,
+                ease: "easeInOut"
+            }
+        }
+    };
+
+    const runVariants = {
+        initial: { x: -30, opacity: 0 },
+        animate: {
+            x: [-30, 30],
+            opacity: [0, 1],
+            transition: {
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+            }
+        }
+    };
+
+    return (
+        <motion.div
+            initial="initial"
+            whileHover="animate"
+            className="flex flex-1 w-full h-full min-h-[6rem] items-center justify-center"
+        >
+            <div className="relative w-full h-full flex items-center justify-center">
+                <motion.div
+                    variants={phoneVariants}
+                    className="absolute flex items-center justify-center"
+                >
+                    <div className="w-24 h-40 bg-neutral-800 rounded-3xl p-4 relative flex items-center justify-center">
+                        <div className="w-2 h-2 bg-neutral-600 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2" />
+                        <motion.div
+                            variants={buttonVariants}
+                            className="w-12 h-12 bg-[#A00000] rounded-full flex items-center justify-center"
+                        >
+                            <IconPlayerPlay className="w-6 h-6 text-white" />
+                        </motion.div>
+                    </div>
+                </motion.div>
+                <motion.div variants={runVariants} className="absolute">
+                    <IconRun className="h-20 w-20 text-[#A00000]" />
+                </motion.div>
+            </div>
+        </motion.div>
+    );
+};
+
 const items = [
+    {
+        title: projects[8].title, //momentum
+        description: (
+            <span className="text-sm">
+                {projects[8].description}
+            </span>
+        ),
+        header: <MomentumAnim />,
+        className: "md:col-span-2",
+        icon: <IconActivity className="h-4 w-4 text-[#A00000]" />,
+        tech: projects[8].technologies,
+        link: projects[8].githubUrl,
+    },
     {
         title: projects[2].title, //pokedex
         description: (
@@ -511,7 +594,7 @@ const items = [
             </span>
         ),
         header: <MusiiAnim />,
-        className: "md:col-span-2",
+        className: "md:col-span-1",
         icon: <IconMusic className="h-4 w-4 text-purple-500" />,
         tech: projects[0].technologies,
         link: projects[0].githubUrl,
@@ -537,7 +620,7 @@ const items = [
             </span>
         ),
         header: <ComAnim />,
-        className: "md:col-span-1",
+        className: "md:col-span-2",
         icon: <IconDeviceMobile className="h-4 w-4 text-white-500" />,
         tech: projects[4].technologies,
         link: projects[4].githubUrl,
@@ -562,7 +645,7 @@ const items = [
             </span>
         ),
         header: <BirboAnim />,
-        className: "md:col-span-2",
+        className: "md:col-span-1",
         icon: <IconLeaf2 className="h-4 w-4 text-yellow-500" />,
         tech: projects[3].technologies,
         link: projects[3].githubUrl,

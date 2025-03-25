@@ -16,6 +16,8 @@ import {
   IconFlame,
   IconBrandPython,
   IconCoffee,
+  IconBrandSupabase,
+  IconBrandReactNative,
 } from "@tabler/icons-react";
 
 export const BentoGrid = ({
@@ -118,6 +120,10 @@ function stringToIcon(tech: string) {
       return <IconBrandPython className="h-6 w-6" />;
     case "Flame":
       return <IconFlame className="h-6 w-6" />;
+    case "Supabase":
+      return <IconBrandSupabase className="h-6 w-6" />;
+    case "React Native":
+      return <IconBrandReactNative className="h-6 w-6" />;
     default:
       return <IconBrandGit className="h-6 w-6" />;
   }

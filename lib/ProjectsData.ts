@@ -79,6 +79,14 @@ export interface Project {
         technologies: ["Flutter", "Dart", "Flame"],
         githubUrl: "https://github.com/mykalbayouk/Puzzle_RPG"
       },
+      {
+        id: 9,
+        title: "Momentum",
+        description: "Personal workout tracking and planning app",
+        image: '/resources/images/projects/momentum.png',
+        technologies: ["React Native", "TypeScript", "Supabase"],
+        githubUrl: "https://github.com/mykalbayouk/momentum"
+      },
     ];
   
     public static get projects(): Project[] {

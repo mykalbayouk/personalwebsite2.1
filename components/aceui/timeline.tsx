@@ -48,7 +48,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         by working on various projects and participating in hackathons.
           </p>
         </div>
-        <div className="md:w-1/2 mt-4 md:mt-0 md:pl-8">
+        <div className="md:w-1/2 mt-4 md:mt-0 md:pl-8 relative z-50">
           <img src="resources/images/about/me.jpg" alt="About me image" className="w-full h-[50vh] rounded-lg shadow-lg object-cover" />
         </div>
       </div>
